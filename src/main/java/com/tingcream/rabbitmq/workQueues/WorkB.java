@@ -36,7 +36,7 @@ public class WorkB {
         System.out.println("WorkerB  Waiting for messages");
  
         //每次从队列获取的message数量
-        channel.basicQos(1);
+        channel.basicQos(2);
      //   prefetchCount maximum number of messages that the server will deliver, 0 if unlimited
 
      

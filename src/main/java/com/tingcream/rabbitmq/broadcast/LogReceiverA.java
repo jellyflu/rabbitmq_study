@@ -26,7 +26,7 @@ public class LogReceiverA {
 	    Connection connection=factory.newConnection();
 	    Channel channel=connection.createChannel();
 	    
-	    
+	    //重要 与生产者使用同一个交换机
 	    channel.exchangeDeclare(EXCHANGE_NAME, "fanout");
 	    
 	    //获取一个随机的队列名称   
